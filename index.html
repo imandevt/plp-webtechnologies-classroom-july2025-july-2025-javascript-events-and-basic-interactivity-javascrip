@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Handling Examples</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <h1>JavaScript Event Handling Examples</h1>
+
+  <!-- 1. Click Event -->
+  <button id="myBtn">Click Me</button><br><br>
+
+  <!-- 2. Double Click -->
+  <div id="myDiv">Double Click Me</div><br>
+
+  <!-- 3. Mouse Over / Out -->
+  <div id="box">Hover over me</div>
+
+  <!-- 4. Key Down / Up -->
+  <input type="text" placeholder="Type something and check console"><br><br>
+
+  <!-- 5. Input / Change -->
+  <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+  <p>👉 Open your browser console (Right click → Inspect → Console) to see some results.</p>
+  <!-- Modal Popup -->
+<button id="openDialog">Welcome message</button>
+
+<dialog id="myDialog">
+  <h3>Welcome!</h3>
+  <p>This is a modal popup using the &lt;dialog&gt; element.</p>
+  <button id="closeDialog">Close</button>
+</dialog>
+
+<hr>
+
+<!-- Progress Bar -->
+<h3>Download Progress</h3>
+<progress id="myProgress" value="0" max="100"></progress><br>
+<button id="startProgress">Start Progress</button>
+
+<form onsubmit="return validateSignUp()">
+  <!-- Name -->
+  <label for="name">Full Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+  <!-- Email -->
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+  <!-- Username -->
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+
+  <!-- Message -->
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message"></textarea><br><br>
+
+  <!-- Submit -->
+  <button type="submit">Submit</button>
+</form>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
